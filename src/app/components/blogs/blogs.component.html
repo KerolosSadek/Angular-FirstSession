@@ -1,0 +1,24 @@
+<div class="container">
+    <p>blogs works!</p>
+    <h3 #welcome>welcome {{firstName}}</h3>
+    <h3>{{getNumber()}}</h3>
+
+    <input [type]="inputType">
+    <br>
+    <br>
+    <img [src]="imagePath">
+    <br>
+    <br>
+    <button (click)="changeName()">Click Here To Change Welcome Name</button>
+    <br>
+    <br>
+    <input type="text" #nameInput placeholder="enter Your Name" (input)="handleInput(nameInput)">
+    {{this.nameInput.value}}
+    <br>
+    <br>
+    <button (click)="add()">+</button>
+
+    <button (click)="sub()">-</button>
+
+    total: {{this.val}}
+</div>
