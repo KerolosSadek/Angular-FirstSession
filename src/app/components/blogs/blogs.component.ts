@@ -11,6 +11,7 @@ export class BlogsComponent implements OnInit {
   imagePath: string = "assets/images/download.jpg"
   inputVal: string = ""
   val : number = 0
+  inputData :string = ""
   constructor() { }
 
   ngOnInit(): void {

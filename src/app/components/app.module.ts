@@ -8,6 +8,8 @@ import { SliderComponent } from './slider/slider.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

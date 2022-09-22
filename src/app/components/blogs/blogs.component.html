@@ -13,12 +13,32 @@
     <br>
     <br>
     <input type="text" #nameInput placeholder="enter Your Name" (input)="handleInput(nameInput)">
-    {{this.nameInput.value}}
+    {{nameInput.value}}
     <br>
     <br>
     <button (click)="add()">+</button>
 
     <button (click)="sub()">-</button>
 
-    total: {{this.val}}
+    total: {{val}}
+    <br>
+    <br>
+    <form action="">
+        <div>
+            <input type="text" class="form-control col-6" name="inputdata" [(ngModel)]="inputData" placeholder="Enter Your Name">
+            {{inputData}}
+        </div>
+    </form>
+    <br>
+    <br>
+    <div class="card" style="width: 18rem;">
+        <img [src]="imagePath" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <br>
+    <br>
 </div>
