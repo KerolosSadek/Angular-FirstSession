@@ -1,0 +1,15 @@
+<div class="container">
+  <form action="" class="row gy-4">
+    <div class="col-6">
+      <input type="text" placeholder="Enter UserName" class="form-control"
+      [(ngModel)]="model.userName" name="userName">
+    </div>
+    <div class="col-6">
+      <input type="email" placeholder="EnterEmail" class="form-control"
+      [(ngModel)]="model.userEmail" name="userEmail">
+    </div>
+    <div class="col-6">
+      <button class="btn btn-primary" (click)="handleSave()">Save User Data</button>
+    </div>
+  </form>
+</div>

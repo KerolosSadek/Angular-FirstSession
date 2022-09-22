@@ -3,20 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SliderComponent } from './slider/slider.component';
-import { BlogsComponent } from './blogs/blogs.component';
-import { FooterComponent } from './footer/footer.component';
+
 
 import { FormsModule } from '@angular/forms';
+
+import { UserFormComponent } from './user-form/user-form.component';
+import { UserListComponent } from '../pages/user-list/user-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    SliderComponent,
-    BlogsComponent,
-    FooterComponent
+    UserFormComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
